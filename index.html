@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добро пожаловать на сайт Tesla!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            background-color: #ffcc00;
+            color: red;
+            padding: 10px;
+            border: 2px solid red;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ffccff;
+        }
+        .car-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .car-images img {
+            width: 200px;
+            height: auto;
+        }
+        .form-section {
+            margin: 20px 0;
+        }
+        .map {
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать на сайт Tesla!</h1>
+    <p>Вы здесь узнаете о машинах Tesla</p>
+
+    <h2>Наши машины</h2>
+    <ul>
+        <li>Tesla Model Y</li>
+        <li>Tesla Model X</li>
+        <li>Tesla Model 3</li>
+        <li>Tesla Model S</li>
+    </ul>
+
+    <h2>Полная информация о Tesla</h2>
+    <table>
+        <tr>
+            <th>Модель</th>
+            <th>Батарея</th>
+            <th>Разгон 0 до 100 км/ч</th>
+            <th>Макс. скорость</th>
+            <th>Запас хода</th>
+            <th>Мощность двигателя</th>
+        </tr>
+        <tr>
+            <td>Tesla Model Y</td>
+            <td>82 кВт*ч</td>
+            <td>5.0 сек</td>
+            <td>217 км/ч</td>
+            <td>533 км (по циклу WLTP)</td>
+            <td>345 л.с.</td>
+        </tr>
+        <tr>
+            <td>Tesla Model X</td>
+            <td>100 кВт*ч</td>
+            <td>4.4 сек</td>
+            <td>250 км/ч</td>
+            <td>576 км (по циклу WLTP)</td>
+            <td>660 л.с.</td>
+        </tr>
+        <tr>
+            <td>Tesla Model 3</td>
+            <td>82 кВт*ч</td>
+            <td>3.3 сек</td>
+            <td>250 км/ч</td>
+            <td>679 км (по циклу WLTP)</td>
+            <td>499 л.с.</td>
+        </tr>
+        <tr>
+            <td>Tesla Model S</td>
+            <td>100 кВт*ч</td>
+            <td>3.2 сек</td>
+            <td>250 км/ч</td>
+            <td>634 км (по циклу WLTP)</td>
+            <td>680 л.с.</td>
+        </tr>
+    </table>
+
+    <div class="form-section">
+        <h2>Выберите цвет машины</h2>
+        <form>
+            <label>
+                <input type="radio" name="model" value="Model Y"> Tesla Model Y
+            </label><br>
+            <label>
+                <input type="radio" name="model" value="Model X"> Tesla Model X
+            </label><br>
+            <label>
+                <input type="radio" name="model" value="Model 3"> Tesla Model 3
+            </label><br>
+            <label>
+                <input type="radio" name="model" value="Model S"> Tesla Model S
+            </label><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="car-images">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdmzt1waW9F4YkBoKDBFk6jFuUK5yFiZ5eQ&s" alt="Tesla Model Y">
+        <img src="https://electromobili.ru/images/com_hikashop/upload/thumbnails/500x1200fsO/tesla-model-x-long-range-performance.jpg" alt="Tesla Model X">
+        <img src="https://www.tesla.com/ownersmanual/images/GUID-B5641257-9E85-404B-9667-4DA5FDF6D2E7-online-en-US.png" alt="Tesla Model 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwt36LYNM4oQBcOMxhD7uLPdR3RboBOO3mzkn_RarRCDiBWDWUWhI2_291wWt2Cpkc8Uc&usqp=CAU" alt="Tesla Model S">
+    </div>
+
+    <div class="map">
+        <h2>Сервис Tesla в Ташкенте</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.9512927052066!2d69.24007381517334!3d41.29949537927107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4d6d2d7bc39%3A0x6f9b7d5edb84c571!2sTesla%20service%20Tashkent!5e0!3m2!1sen!2s!4v1673888256342!5m2!1sen!2s" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</body>
+</html>
